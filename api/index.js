@@ -19,6 +19,12 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json())   //to parse the incoming requests with SON   payloads (from req.body)
 app.use(cookieParser());
 
+app.use(cors({
+    origin : '*',
+    methods : '*',
+    credentials : true
+}));
+
 //test
 app.get("/",(req,res)=>{
     res.send("hello from server :)");
