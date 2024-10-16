@@ -17,7 +17,7 @@ import io from 'socket.io-client'
         if(authUser){
             console.log("authuser :",authUser._id);
             //https://chat-ou2n.onrender.com/
-            const socket = io('http://localhost:5000',{
+            const socket = io('https://chat-app-git-main-yesu-rajus-projects.vercel.app',{
                 query : {
                     userId : authUser._id,
                 }

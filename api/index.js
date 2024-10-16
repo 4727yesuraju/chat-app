@@ -31,6 +31,13 @@ app.get("/",(req,res)=>{
     res.send("hello from server :)");
 })
 
+app.get("/:name",(req,res)=>{
+    const {name} = req.params;
+    res.status(200).json({
+        message : `hello from ${name}`
+    })
+})
+
 app.use('/api/auth',authRoute);
 app.use('/api/messages',messageRoute);
 app.use('/api/users',userRoute);

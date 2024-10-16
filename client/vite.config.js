@@ -8,7 +8,7 @@ export default defineConfig({
     port : 3000,
     proxy : {
       '/api' : {
-        target : "https://chat-qrlawmm5n-yesu-rajus-projects.vercel.app"
+        target : "https://chat-app-git-main-yesu-rajus-projects.vercel.app"
       }
     }
   }
