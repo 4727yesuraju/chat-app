@@ -19,3 +19,28 @@ const conversationSchema = new mongoose.Schema({
 const Conversation = mongoose.model("Conversation",conversationSchema);
 
 export default Conversation ; 
+
+
+// {
+//     metadata:{
+//         referenceNumber:"",
+//             module:"loads",
+//             companyId:"",
+//             userId:"",
+//             name:"",
+//             chatId:""
+//     }
+//     timestamp:"",
+//     values:[
+//         {
+//             question:"",
+//             answer:""
+//             timestamp:""
+//         },
+//       {
+//             question:"",
+//             answer:""
+//             timestamp:""
+//         }
+//     ]
+// }
